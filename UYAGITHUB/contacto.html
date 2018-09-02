@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <link rel='shortcut icon' type='image/x-icon' href='img/birrete.png' />  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">  
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>     
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <title>Contacto</title>
+  </head>
+  
+  <body>
+    <div aria-label="Barra de navegación" class="header">
+      <div role="toolbar" class="navbar">
+        <a href="index.html">
+          <img alt="Logo" title="Inicio" src="img/logo5.png" tabindex="1" class="img-logo left" alt="logo"/>
+        </a>
+        <div class="topnav hide-on-med-and-down">
+          <a class="menu-3" title="Inicio" href="index.html" tabindex="2">Inicio</a>
+      <ul id = "dropdown" class = "drop-ul dropdown-content" role="menu">
+        <li class="drop"><a href = "comedor.html" tabindex="4" role="menuitem" aria-expanded="false">Comedor<span></span></a></li>
+        <li class="drop"><a href = "horariosycirculares.html" tabindex="5" role="menuitem" aria-expanded="false">Horarios y Circulares</a></li>
+        <li class="drop"><a href = "preinscripcion.html" tabindex="6" role="menuitem" aria-expanded="false">Preinscripción 18-19</a></li>
+        <li class="drop"><a href = "sobrenosotros.html" tabindex="7" role="menuitem" aria-expanded="false">Sobre nosotros</a></li>   
+      </ul>  
+
+        <a class = "dropdown-button menu-1" href = "#" data-activates="dropdown"  aria-expanded="true" tabindex="3" aria-expanded="true">Colegio &nbsp; ▼</a>  
+        <a class=" menu-active menu-1" title="Contacto" href="contacto.html" tabindex="8" >Contacto</a>
+        <a title="Inicio de Sesión" href="iniciosesion.html" class="right menu-2 cuadrado" tabindex="10">Iniciar Sesión</a>
+        <a title="Registro" href="registro.html" class="right menu-2 cuadrado lil-espacio-right" tabindex="9">Registrarse</a>
+        </div>
+      </div>
+    </div>
+    
+    <h1 class="h1-titulo center-align">Contáctanos</h1>
+    <p class="center-align">¿Tienes alguna duda? Envíanos un mensaje y responderemos lo antes posible.</p>
+    
+    <div class="row">
+      <div class="col s6">
+          <div aria-label="Cuerpo" class="cuerpo-princi">
+              <div class="row ">
+                  <div class="cuadro-form">
+                      <form method="get" action="msjenviado.html" name="Formulario">
+                          
+                          <div class="input-field">
+                                <input title="" name ="nombre" id="nombre" type="text" class="validate" tabindex="11"  aria-required="true" oninput="comprobar_nombre(nombre)" required>
+                                <label class="etiqueta-form" for="nombre">Nombre</label>
+                                <p id="mensaje"></p>
+                          </div>
+                          <div class="input-field">
+                                <input name ="apellido" id="apellido" type="text" class="validate" tabindex="12"  aria-required="true" oninput="comprobar_apellido()" required>
+                                <label class="etiqueta-form" for="apellido">Apellidos</label>
+                          </div>
+                          <div class="input-field">
+                               <input name="correo" id="email" type="email" class="validate" tabindex="13" aria-required="true" required>
+                               <label class="etiqueta-form" for="email">Correo electrónico</label>
+                          </div>
+                          
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea" tabindex="14" aria-required="true" required></textarea>
+                          <label class="etiqueta-form " for="textarea1">Mensaje</label>
+                        </div>
+                        
+                        <button name="Botón Contacto" alt="Contacto" value="Datos_contacto"  role="button" type="submit" class="btn waves-effect boton-form" tabindex="15">Enviar</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+          <div aria-label="Cuerpo" role="form" class="cuerpo-princi">
+            <div>
+              <div class="floatl">
+                  <h2 class="h2-subtitulo"><b>Teléfono:</b> &nbsp&nbsp&nbsp <i>732-466-7854</i></h2>
+                  <h2 class="h2-subtitulo"><b>Correo:</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>colegio.uya@2018.com</i></h2>
+                  <h2 class="h2-subtitulo"><b>Dirección:</b> &nbsp&nbsp <i>C.º San Francisco de Paula. San Cristóbal de La Laguna. S/C de Tenerife</i></h2>
+              </div>
+              <div class="semi-cuerpo2 floatr">
+                <iframe tabindex="-1" class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d831.7388812225121!2d-0.7222236!3d51.4087074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767e69c90080ff%3A0x64bbf4df63be8295!2sPicket+Post+Cl%2C+Winkfield+Row%2C+Bracknell+RG12+9FG%2C+Reino+Unido!5e1!3m2!1ses!2ses!4v1524437316519" width="400" height="250" frameborder="0" allowfullscreen></iframe>        
+              </div>
+            </div>
+          </div>
+      
+      
+    </div>
+    
+    
+    <footer>
+        <div class="pie">
+          <p class="copyright"> <b>© 2018 Copyright </b></p>
+            <div class="pie-redes inline right">
+              <i class="fa fa-envelope"></i>
+              <a class="letra-blanca"> colegio.uya@2018.com</a>
+            </div>
+        </div>
+      </footer>
+  </body>
+
+</html>
